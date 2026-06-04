@@ -1,5 +1,3 @@
-// red.js — Random 30 questions + confirm answer + end results review (Arabic UI)
-
 let QUESTIONS = [];
 let quiz = {
   list: [],
@@ -23,8 +21,8 @@ function shuffle(arr) {
 }
 
 async function loadQuestions() {
-  const res = await fetch("red_questions.json", { cache: "no-store" });
-  if (!res.ok) throw new Error("Could not load red_questions.json");
+  const res = await fetch("d1_questions.json", { cache: "no-store" });
+  if (!res.ok) throw new Error("Could not load d1_questions.json");
   return await res.json();
 }
 
